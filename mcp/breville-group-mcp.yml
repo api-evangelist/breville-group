@@ -1,0 +1,19 @@
+generated: '2026-10-21'
+method: none
+status: none
+name: Breville Group MCP server
+description: No official hosted or local MCP server is published by Breville Group, and no OpenAPI contract exists in this repo from which to derive a candidate tool list.
+source: https://www.breville.com/en-us
+deployment:
+  mode: none
+  auth: unknown
+  verified: searched
+tools: []
+evidence:
+- url: https://www.breville.com/.well-known/mcp.json
+  status: 200
+  note: catch-all - host returns the Next.js storefront HTML (text/html) for any path; not an MCP document
+- url: https://brevillegroup.com/.well-known/mcp.json
+  status: 404
+- note: pre-flight contract discovery (2026-10-21) on api.brevillegroup.com, api.breville.com, brevillegroup.com, www.breville.com graded mcp absent; mcp_tool_table empty (no MCP docs found)
+- note: web search 'Breville MCP server OR llms.txt OR developer API' (2026-10-21) returned no Breville-owned MCP server

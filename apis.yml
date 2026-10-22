@@ -1,23 +1,103 @@
 aid: breville-group
+
 name: Breville Group
-description: 'Breville Group is a company surfaced via the API Evangelist harvest backlog (source: australia-apidays-2026)
-  and added to the network as a stub for full-pipeline profiling.'
+
+description: 'Breville Group Limited (ASX: BRG) is an Australian-headquartered global designer and marketer of premium small kitchen appliances, centred on the Breville brand. Its range spans espresso machines, coffee grinders, countertop ovens and air fryers, juicers, blenders, food processors, sous vide and pizza ovens, plus commercial lines and the Breville+ / Beanz coffee services. Formerly Housewares International Limited (founded 1957, ASX-listed 1999), it acquired the Breville companies in 2001 and renamed itself Breville Group Limited in 2008. No public developer API, documentation or developer portal is published on breville.com or brevillegroup.com.'
+
 url: https://raw.githubusercontent.com/api-evangelist/breville-group/refs/heads/main/apis.yml
+
 x-type: company
+
 x-source: harvest:australia-apidays-2026
-x-tier: stub
-x-tier-reason: harvest
+
+x-tier: profiled
+x-tier-reason: enrichment pass 2026-10-21 (modular-v1; was harvest)
+
 specificationVersion: '0.20'
+
 created: '2026-10-21'
+
 modified: '2026-10-21'
+
 tags:
 - Company
-apis: []
+- Kitchen Appliances
+- Consumer Electronics
+- Coffee
+- Espresso
+- Retail
+- E-Commerce
+- Australia
+- ASX
+
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+
+image: https://assets-dam.foodthinkers.com/ZKCA55LU/at/74hxrhwcvch6qjvqbk9qkp/Breville_Oracle_Touch_BTS_Wide_Angle_with_Talent__1_V3.tif?auto=webp
+
 common:
+- type: Hosts
+  url: hosts/breville-group-hosts.yml
+- type: Vendors
+  url: vendors/breville-group-vendors.yml
+- type: DomainSecurity
+  url: security/breville-group-domain-security.yml
 - type: Website
-  url: https://breville.com/
+  url: https://www.breville.com/en-us
+- type: CorporateWebsite
+  url: https://brevillegroup.com/
+- type: About
+  url: https://brevillegroup.com/about/
+- type: InvestorRelations
+  url: https://brevillegroup.com/
+- type: Blog
+  url: https://www.breville.com/us/en/blog.html
+- type: Support
+  url: https://www.breville.com/en-us/support
+- type: SignUp
+  url: https://www.breville.com/en-us/my-account/dashboard
+- type: Careers
+  url: https://brevillegroup.com/careers/
+- type: TermsOfService
+  url: https://www.breville.com/en-us/legal/terms-of-use-and-sale
+- type: PrivacyPolicy
+  url: https://www.breville.com/en-us/legal/privacy-notice
+- type: Contact
+  url: https://brevillegroup.com/contact/
+
+apis: []
+
+x-coverage:
+  state: covered
+  reason: identity-verified
+  detail: Identity verified from breville.com (title "Breville | High End Kitchen & Cooking Appliances") and brevillegroup.com (title "Breville Group Limited"). No developer portal, API docs or public API published; api.foodthinkers.com observed in site JS (e-commerce/search proxy) and not called.
+  evidence:
+  - url: https://breville.com/
+    status: 200
+  - url: https://www.breville.com/en-us
+    status: 200
+  - url: https://brevillegroup.com/
+    status: 200
+  - url: https://brevillegroup.com/about/
+    status: 200
+  - url: https://www.breville.com/us/en/blog.html
+    status: 200
+  - url: https://www.breville.com/en-us/support
+    status: 200
+  - url: https://www.breville.com/en-us/legal/terms-of-use-and-sale
+    status: 200
+  - url: https://www.breville.com/en-us/legal/privacy-notice
+    status: 200
+  - url: https://brevillegroup.com/careers/
+    status: 200
+  - url: https://brevillegroup.com/contact/
+    status: 200
+x-enrichment:
+  date: '2026-10-21'
+  status: enriched
+  artifacts_added: 8
+  pass: modular-v1
+  engine: identity=anthropic,contract=anthropic,surfaces=anthropic,docs=anthropic,regulatory=anthropic

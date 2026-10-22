@@ -1,0 +1,25 @@
+generated: '2026-10-21'
+method: none
+source:
+- https://zapier.com/apps/breville-group/integrations
+- https://n8n.io/integrations/breville-group/
+- https://composio.dev/toolkits/breville-group
+- https://monid.ai/tools/breville-group
+checked:
+- https://zapier.com/apps/breville/integrations
+- https://n8n.io/integrations/breville/
+- https://www.make.com/en/integrations/breville
+- https://www.breville.com/en-us
+- https://brevillegroup.com/
+- https://composio.dev/toolkits/breville-group
+- https://monid.ai/tools/breville-group
+- https://n8n.io/integrations/breville-group/
+- https://zapier.com/apps/breville-group/integrations
+summary: null
+marketplace_apps: []
+edges: []
+templates: []
+note: No integration marketplace listing, partner/integrations page or contract was found for Breville Group. Breville
+  publishes no public developer API. A community Home Assistant project references a Breville IoT websocket host
+  (iot-api-ws.breville.com); that host was found by inference from a third-party project, is not documented by Breville,
+  and was not called.

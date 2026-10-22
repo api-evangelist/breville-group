@@ -1,0 +1,102 @@
+generated: '2026-10-21'
+method: searched
+probe: true
+source: https://www.breville.com/en-us/legal/privacy-notice
+signals:
+  data_subject_request:
+    url: https://www.breville.com/en-us/legal/privacy-notice
+    section: Your Privacy Rights
+    channel: Data Subject Access form, "Your Privacy Choices" link, toll free (866) 273-8455; appeals to privacy@breville.com
+    stated_sla: 45 days after receipt of a verifiable request (CCPA access requests)
+    evidence:
+    - source: https://www.breville.com/en-us/legal/privacy-notice
+      http_status: 200
+      fetched: '2026-10-21'
+      quote: >-
+        You may make these requests at any time by logging into your Breville account, completing and submitting a Data Subject Access form, using the “Your Privacy Choices” link on our Services, or contacting us toll free at (866) 273-8455.
+    - source: https://www.breville.com/en-us/legal/privacy-notice
+      http_status: 200
+      fetched: '2026-10-21'
+      quote: >-
+        If you are dissatisfied with our decision regarding your request, you may appeal that decision by emailing privacy@breville.com.
+    - source: https://www.breville.com/en-us/legal/privacy-notice
+      http_status: 200
+      fetched: '2026-10-21'
+      quote: >-
+        If you request that we provide Personal Information to you, we will deliver it as required by law within 45 days after receipt of a verifiable request, unless we notify you that we require additional time to respond, in which case we will respond within such additional period of time required by law.
+    note: >-
+      A documented data-subject request channel (account, form, privacy-choices link, phone) with identity
+      verification, an appeal route, and a 45-day delivery commitment for California access requests. EEA
+      users are referred to a separate EU Privacy Policy that was not read in this pass.
+  global_privacy_control:
+    url: https://www.breville.com/en-us/legal/privacy-notice
+    section: Your Privacy Choices
+    evidence:
+    - source: https://www.breville.com/en-us/legal/privacy-notice
+      http_status: 200
+      fetched: '2026-10-21'
+      quote: >-
+        If you use a browser or extension that sends a Global Privacy Control or other opt-out preference signal, we will treat that signal as a request to opt out of sale, sharing and targeted advertising where required by applicable law.
+    - source: https://www.breville.com/en-us/legal/privacy-notice
+      http_status: 200
+      fetched: '2026-10-21'
+      quote: >-
+        When you visit our website using a browser or device that transmits an opt-out preference signal, we will process that signal and confirm on our website that your request has been honored.
+    note: Explicit commitment to honour GPC / opt-out preference signals and to confirm on-site that the signal was honoured.
+  data_retention:
+    url: https://www.breville.com/en-us/legal/privacy-notice
+    section: Data Retention
+    evidence:
+    - source: https://www.breville.com/en-us/legal/privacy-notice
+      http_status: 200
+      fetched: '2026-10-21'
+      quote: >-
+        We store the information we collect about you as necessary for the purpose(s) for which we originally collected it, or for other legitimate business purposes, including to meet our legal, regulatory, tax, bookkeeping or other compliance obligations.
+    note: Purpose-based retention statement only; no retention periods or schedule are published.
+  ai_transparency:
+    url: https://www.breville.com/en-us/legal/privacy-notice
+    section: Automated Decision-making Technology; AI-Assisted Support, Digital Support Tools, and Repair Requests
+    evidence:
+    - source: https://www.breville.com/en-us/legal/privacy-notice
+      http_status: 200
+      fetched: '2026-10-21'
+      quote: >-
+        Breville does not use automated decision-making technology ("ADMT") to make significant decisions concerning you.
+    - source: https://www.breville.com/en-us/legal/privacy-notice
+      http_status: 200
+      fetched: '2026-10-21'
+      quote: >-
+        We may use AI-assisted tools, including our online support tools and chatbot, to help provide product troubleshooting, customer support, repair request support, warranty assessment support, and related customer service.
+    note: >-
+      Discloses use of AI-assisted support tools/chatbot (and that interaction records may be retained), and
+      denies use of ADMT for significant decisions, with a commitment to update the notice and offer an
+      opt-out before any such use.
+  age_assurance:
+    url: https://www.breville.com/en-us/legal/privacy-notice
+    section: Use of Services by Minors
+    evidence:
+    - source: https://www.breville.com/en-us/legal/privacy-notice
+      http_status: 200
+      fetched: '2026-10-21'
+      quote: >-
+        (ii) Minors are not permitted to use the Services without the supervision of a parent or legal guardian; (iii) we do not knowingly collect, solicit, or sell personal information from Minors or knowingly allow such persons to register for an online account or to post personal information on the Services;
+    note: A minors policy (supervision requirement, no knowing collection, removal on request); no age-verification or age-estimation mechanism is described.
+  accessibility_conformance:
+    url: https://www.breville.com/en-us/support/accessibility-statement
+    section: Accessibility Statement (Updated July 21, 2026)
+    standard: WCAG 2.1 Level AA (target, not claimed full conformance)
+    evidence:
+    - source: https://www.breville.com/en-us/support/accessibility-statement
+      http_status: 200
+      fetched: '2026-10-21'
+      quote: >-
+        Our goal is for our websites and mobile applications to conform to the Web Content Accessibility Guidelines (WCAG) 2.1, Level AA.
+    - source: https://www.breville.com/en-us/support/accessibility-statement
+      http_status: 200
+      fetched: '2026-10-21'
+      quote: >-
+        Some content, features, or functionality may not yet meet all WCAG 2.1, Level AA success criteria.
+    note: >-
+      A dated accessibility statement covering Breville and its brands (Baratza, beanz, ChefSteps, Breville
+      Commercial, Lelit) that targets WCAG 2.1 AA and openly states partial conformance; linked from the
+      Terms of Use section 26.

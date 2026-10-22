@@ -1,0 +1,67 @@
+generated: '2026-10-21'
+method: derived
+source: the pre-flight dossier, apis.yml pointers, spec servers, well-known, vendors -- nothing fetched here
+generator: derive-hosts.py
+summary:
+  hosts: 4
+  own: 2
+  other_domain: 2
+  platform: 0
+  roles:
+  - api
+  - marketing
+  - website
+hosts:
+- host: api.breville.com
+  found_by:
+  - contract-discovery
+  types: []
+  serves: []
+  registrable_domain: breville.com
+  role: api
+  relation: own
+- host: api.brevillegroup.com
+  found_by:
+  - contract-discovery
+  types: []
+  serves: []
+  registrable_domain: brevillegroup.com
+  role: api
+  relation: other-domain
+- host: brevillegroup.com
+  found_by:
+  - pointer
+  - probed
+  - contract-discovery
+  - well-known
+  types:
+  - CorporateWebsite
+  - About
+  - InvestorRelations
+  - Careers
+  - Contact
+  serves: []
+  registrable_domain: brevillegroup.com
+  role: marketing
+  relation: other-domain
+- host: www.breville.com
+  found_by:
+  - pointer
+  - probed
+  - contract-discovery
+  - well-known
+  - vendor-detect
+  types:
+  - Website
+  - Blog
+  - Support
+  - SignUp
+  - TermsOfService
+  - PrivacyPolicy
+  serves:
+  - cdn
+  - hosting
+  vendor: cloudflare
+  registrable_domain: breville.com
+  role: website
+  relation: own
